@@ -2,13 +2,16 @@
 mylist = ["banana", "cherry", "apple", 5, True, "apple"]
 print(mylist)
 
-# You can reference items in a list by the index position. Positive numbers start from the beginning of the list while negative numbers start at the end of the list. (Be careful to not specify an index position that is too large or you will get an error stating that the index is out of range!)
+''' You can reference items in a list by the index position. 
+Positive numbers start from the beginning of the list while negative numbers start at the end of the list. 
+(Be careful to not specify an index position that is too large or you will get an error stating that the index is out of range!) '''
 item = mylist[0]
 item2 = mylist[-1]
 print(item)
 print(item2)
 
-# You can use the list function to create a new empty list (and if you want, you can append items to them as well, which we will look at later) or reference another list.
+''' You can use the list function to create a new empty list 
+(and if you want, you can append items to them as well, which we will look at later) or reference another list. '''
 mylist2 = list()
 mylist3 = list(mylist)
 print(mylist2)
@@ -45,7 +48,8 @@ item3 = mylist.pop()
 print(item3)
 print(mylist)
 
-# This will remove a specific item from the list. Be careful to not specify an item that is not in the list or you will get a ValueError stating: list.remove(x): x not in list.
+''' This will remove a specific item from the list. 
+Be careful to not specify an item that is not in the list or you will get a ValueError stating: list.remove(x): x not in list. '''
 item4 = mylist.remove("cherry")
 print(mylist)
 
@@ -76,9 +80,12 @@ mylist7 = [1, 2, 3, 4, 5, 6, 7]
 new_list2 = mylist7 + mylist6
 print(new_list2)
 
-# Slicing: you can slice a list by indicating the starting index position and the stopping index position (again, this is called slicing).
+''' Slicing: you can slice a list by indicating the starting index position and the stopping index position 
+(again, this is called slicing). '''
 mylist8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-a = mylist8[1:5] # Notice how it starts at index position 1 and stops at index position 5, however when we print this it will only print the items/values for index positions 1-4. So the stopping index position is actually excluded.
+a = mylist8[1:5] 
+''' ^Notice how it starts at index position 1 and stops at index position 5, however when we print this it will 
+only print the items/values for index positions 1-4. So the stopping index position is actually excluded. '''
 print(a)
 # Now, if you do not specify a starting index position then it just starts all the way from the beginning.
 b = mylist8[:5]
@@ -86,7 +93,8 @@ print(b)
 # Likewise, if you do not specify a stopping index position then it just stops all the way at the end.
 c = mylist8[1:]
 print(c) 
-# Now, this will step through a list based on the amount of steps you specify. So, the below example starts at the beginning of the list and steps through the list by 2 all the way until the end of the list.
+''' Now, this will step through a list based on the amount of steps you specify. 
+So, the below example starts at the beginning of the list and steps through the list by 2 all the way until the end of the list. '''
 d = mylist8[::2]
 print(d)
 # You can do this in reverse order as well.
@@ -106,7 +114,8 @@ print(list_cpy3)
 list_cpy.append("lemon")
 print(list_cpy)
 
-# List comprehension: create a new list from an existing list with a single line! We will use an expression followed by a for loop to achieve this. Again, we do not HAVE to use the value of "i" in the expression, you can call it whatever you want.
+''' List comprehension: create a new list from an existing list with a single line! We will use an expression followed by a for loop to achieve this. 
+Again, we do not HAVE to use the value of "i" in the expression, you can call it whatever you want. '''
 x = [1, 2, 3, 4, 5, 6, 7]
 y = [i*i for i in x] # So all we are doing here is squaring each item in the list and iterating through that list with a for loop.
 print(x) # This will print the original list.

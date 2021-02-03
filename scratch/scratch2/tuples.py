@@ -49,7 +49,8 @@ print(my_tuple.count('p'))
 print(my_tuple.index('a'))
 print(my_tuple.index('e'))
 
-# Get the first index of an element inside of a tuple (If you specify an element that is not inside of the tuple then you will get a ValueError, so be careful).
+''' Get the first index of an element inside of a tuple 
+(If you specify an element that is not inside of the tuple then you will get a ValueError, so be careful). '''
 print(my_tuple.index('p'))
 print(my_tuple.index('a'))
 print(my_tuple.index('l'))
@@ -87,7 +88,8 @@ print(name)
 print(age)
 print(city)
 
-# Unpack multiple elements from a tuple using a star. We will print the first element in the tuple, then the last element in the tuple and finally we will print everything in between (as a list).
+''' Unpack multiple elements from a tuple using a star. We will print the first element in the tuple, 
+then the last element in the tuple and finally we will print everything in between (as a list). '''
 my_tuple_2 = (0, 1, 2, 3, 4)
 
 i1, *i2, i3 = my_tuple_2
@@ -95,7 +97,9 @@ print(i1)
 print(i3)
 print(i2)
 
-# Compare a tuple and a list based off of number of bytes and also based off of time (by creating a million lists and a million tuples). The purpose of this is to show that tuples are sometimes more efficient than lists (especially when working with large data).
+''' Compare a tuple and a list based off of number of bytes and also based off of time 
+(by creating a million lists and a million tuples). The purpose of this is to show that tuples are sometimes more efficient than lists 
+(especially when working with large data). '''
 import sys
 my_list_1 = [0, 1, 2, "hello", True]
 my_tuple_3 = (0, 1, 2, "hello", True)

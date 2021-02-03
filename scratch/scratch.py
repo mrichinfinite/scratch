@@ -62,7 +62,8 @@ print(phrase.index("o"))
 print(phrase.index("d"))
 print(phrase.index("a"))
 
-# Now I can also use the index function to see at what position a certain word in the string variable started. So, as we can see here, the word "day" started at ordinal number 5:
+''' Now I can also use the index function to see at what position a certain word in the string variable started. 
+So, as we can see here, the word "day" started at ordinal number 5: '''
 print(phrase.index("day"))
 
 # You can replace words or letters in a string as well:
@@ -104,7 +105,8 @@ print(min(4, 6))
 print(round(2.5))
 print(round(3.7))
 
-# Can import external code into our files using import (this will grab a few different math functions from the math module that we can use):
+''' Can import external code into our files using import 
+(this will grab a few different math functions from the math module that we can use): '''
 from math import *
 
 # Floor method grabs the lowest number, or rounds down, if you will (in this case it will remove the decimal point):
@@ -131,7 +133,8 @@ num2 = input("Enter another number: ")
 result = num1 + num2
 print(result)
 
-# Whoops! That just converted everything into a string. We don't want that, we want to add things up. Let's fix it. Let's convert the strings to numbers:
+''' Whoops! That just converted everything into a string. 
+We don't want that, we want to add things up. Let's fix it. Let's convert the strings to numbers: '''
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 
@@ -171,11 +174,13 @@ friends = ["Kevin", "Karen", "Jim"]
 #This will just print the list:
 print(friends)
 
-# But let's try to print a specific element in the list using list indexing. Remember, in Python the first index value is 0..then 1, 2, 3 and so on. So, the 1st element in the list is index position 0:
+''' But let's try to print a specific element in the list using list indexing. 
+Remember, in Python the first index value is 0..then 1, 2, 3 and so on. So, the 1st element in the list is index position 0: '''
 print(friends[0])
 print(friends[2])
 
-# You can also index starting from the end of the list instead of the beginning. This will immediately print the last element in the list (keep in mind it actually STARTS with -1, not 0!):
+''' You can also index starting from the end of the list instead of the beginning. 
+This will immediately print the last element in the list (keep in mind it actually STARTS with -1, not 0!): '''
 print(friends[-1])
 
 # This will grab all of the elements in index position 1 and everything after that:
@@ -256,7 +261,8 @@ def say_hi():
 # Now we have to call the function:
 say_hi()
 
-# Let's look at how the flow goes using simple print statements, then the function. It will start at the first print statement, execute the code within the function, then end in the final print statement:
+''' Let's look at how the flow goes using simple print statements, then the function. 
+It will start at the first print statement, execute the code within the function, then end in the final print statement: '''
 print("Top")
 say_hi()
 print("Bottom")
@@ -268,15 +274,19 @@ def say_hi(name):
 say_hi("Mike")
 say_hi("Steve")
 
-# ^As you can see here, we can give the function a parameter, and based on what parameter we give it, it will perform its task a little bit differently. Let's try one more:
+''' ^As you can see here, we can give the function a parameter, and based on what parameter we give it, 
+it will perform its task a little bit differently. Let's try one more: '''
 def say_hi(name, age):
     print("Hello " + name + ", you are " + str(age))
 
 say_hi("Mike", 35)
 say_hi("Steve", 70)
-# You can pass in strings, integers, Booleans, arrays, etc. in functions. Generally, you will be breaking your code up into different functions as you go along. This is typical for Python.
+''' You can pass in strings, integers, Booleans, arrays, etc. in functions. 
+Generally, you will be breaking your code up into different functions as you go along. This is typical for Python. '''
 
-# Return statement to return information from a function. We are asking the program to give us some information back from this function, specifically we are asking it to cube the number 3. Let's cube the number and use our return statement:
+''' Return statement to return information from a function. 
+We are asking the program to give us some information back from this function, specifically we are asking it to cube the number 3. 
+Let's cube the number and use our return statement: '''
 def cube(num):
     return num*num*num
 
@@ -288,7 +298,8 @@ def cube(num):
 
 result = cube(4)
 print(result)
-# Return statements break you out of the function. So you cannot put anything after it and expect a result. Again, return statements are great for getting values back from a function.
+''' Return statements break you out of the function. So you cannot put anything after it and expect a result. 
+Again, return statements are great for getting values back from a function. '''
 
 # IF statements to make decisions:
 is_male = True
@@ -327,7 +338,8 @@ def max_num(num1, num2, num3):
     else:
         return num3
 print(max_num(3, 4, 5))
-# You can play around make comparisons with any data type, numbers, strings, Booleans, etc. and you can use many different comparison operators to play around with (>, <, !=, ==, >=, <=). Maybe try some more below?
+''' You can play around make comparisons with any data type, numbers, strings, Booleans, etc. and you can use 
+many different comparison operators to play around with (>, <, !=, ==, >=, <=). Maybe try some more below? '''
 
 # Building a better calculator! We'll get 2 numbers and an operator from the user then we will perform the operation:
 num3 = float(input("Enter first number: "))
@@ -345,7 +357,9 @@ elif op == "*":
 else:
     print("Invalid operator!")
 
-# Let's learn about dictionaries now. It's a special structure in Python that allows us to store information in what's called key value pairs. You can create a bunch of different key value pairs and when you want to access a specific piece of information inside the dictionary, you can refer to it by its key.
+''' Let's learn about dictionaries now. It's a special structure in Python that allows us to store information in what's called key value pairs. 
+You can create a bunch of different key value pairs and when you want to access a specific piece of information inside the dictionary, 
+you can refer to it by its key. '''
 monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -360,7 +374,8 @@ monthConversions = {
     "Nov": "November",
     "Dec": "December"
 }
-# On the left is the key and on the right is the value. These are key value pairs. Keep in mind that each value is unique, so you cannot use the same value twice.
+''' On the left is the key and on the right is the value. These are key value pairs. 
+Keep in mind that each value is unique, so you cannot use the same value twice. '''
 # There are two ways to print the keys here:
 print(monthConversions["Nov"])
 # or
@@ -368,15 +383,19 @@ print(monthConversions.get("Nov"))
 # If you print a key that's not mappable to any values in the dictionary, you can actually pass in a default value if you'd like.
 # You can also use numbers, etc. doesn't always have to be a string.
 
-# While loops! Structure in Python which allows us to loop through and execute a block of code multiple times. You can loop through a block of code in a while loop as long as a condition is true, if you want. In this case "i" is the condition we are using.
+''' While loops! Structure in Python which allows us to loop through and execute a block of code multiple times. 
+You can loop through a block of code in a while loop as long as a condition is true, if you want. 
+In this case "i" is the condition we are using. '''
 i = 1
 while i <= 10:
     print(i)
     i += 1
 # ^The operator += here means that the i = i + 1. This is a shorthand way of saying this.
 print("Done with loop")
-# So what is happening here is we are printing out the while condition/declaration as long as it is true, the moment it becomes false, we print out statement here at the end. The code will keep executing from the top until the while declaration becomes false.
-# As you can see, we keep adding 1 to i until we get to the end, so this should print out a series of numbers from 1 to 10 and the loop will stop iterating.
+''' So what is happening here is we are printing out the while condition/declaration as long as it is true, the moment it becomes false, 
+we print out statement here at the end. The code will keep executing from the top until the while declaration becomes false.
+As you can see, we keep adding 1 to i until we get to the end, so this should print out a series of numbers from 1 to 10 
+and the loop will stop iterating. '''
 
 # Building a guessing game:
 secret_word = "giraffe" # Secret word variable
@@ -397,7 +416,9 @@ if out_of_guesses: # If the user is out of guesses, print the below statement:
 else: # Else if the user guessed the word within the allotted amount of guesses, print the below statement:
     print("You win!")
 
-# Let's now cover using for loops! It's a special type of loop in Python that allows us to loop over different collections of items (arrays, letters inside of a string, a series of numbers, etc.). When you specify the name for the for loop variable (like "for ___") it can be any name you want. Below are some simple examples:
+''' Let's now cover using for loops! It's a special type of loop in Python that allows us to loop over different collections of items 
+(arrays, letters inside of a string, a series of numbers, etc.). When you specify the name for the for loop variable (like "for ___") 
+it can be any name you want. Below are some simple examples: '''
 # Loop through all the letters in a string and print them:
 for letter in "Giraffe Academy":
     print(letter)
@@ -472,10 +493,15 @@ print(translate(input("Enter a phrase: ")))
 try:
     number = int(input("Enter a number: "))
     print(number)
-except ValueError: # Notice how this is a specific error, the "ValueError" that's built into Python. You always want to be specific with the errors you use in your except block. Another example is the "ZeroDivisionError" which you can throw if divide by zero happens in your code. Look up more specific errors online if you want. 
+except ValueError:  
     print("Invalid input, please enter a number only.")
+''' ^Notice how this is a specific error, the "ValueError" that's built into Python. 
+You always want to be specific with the errors you use in your except block. 
+Another example is the "ZeroDivisionError" which you can throw if divide by zero happens in your code. 
+Look up more specific errors online if you want. '''
 
-# Python read command to read a file that is stored outside your Python file (using a try-except block here because we are not actually reading from this file, this is just an example):
+''' Python read command to read a file that is stored outside your Python file 
+(using a try-except block here because we are not actually reading from this file, this is just an example): '''
 try:
     employee_file = open("employees.txt", "r")
 # Check to make sure that the file is actually readable (this will return a Boolean value):
@@ -501,7 +527,8 @@ except:
 try:
     employee_file = open("employees.txt", "a")
 # Now actually append the message to the end of the text file:
-    employee_file.write("Toby - Human Resources") # Keep in mind that if you want to add this to a new line you need to use the escape character of "\n" to start a new line.
+    employee_file.write("Toby - Human Resources") 
+# Keep in mind that if you want to add this to a new line you need to use the escape character of "\n" to start a new line.
 # Always be sure to close the file after working with it, since Python will not do this on its own:
     employee_file.close()
 except:
@@ -517,41 +544,57 @@ except:
     print("There is no such file, but nice try!")
 # You can actually create an entirely new file using the write command as well.
 
-# Keep in mind how to import modules using the import method, for anything that's not built into the standard Python library, you can pip install it then import it into your code.
+''' Keep in mind how to import modules using the import method, 
+for anything that's not built into the standard Python library, you can pip install it then import it into your code. '''
 
-# Let's look at classes and objects. These are basically "data types" which can be used to store information about something (more so than just your regular string, integer or Boolean value). First of all, the class defines the object (Student class below), then the object is the data type in action (an actual student). Let's look into it deeper:
-class Student: # Let's define what our student is by using functions and attributes:
-    def __init__(self, name, major, gpa, is_on_probation): # This is the initialize function that will map out what attributes a student will have. We will pass in attributes into the parentheses. So within this initialize function we have defined what a student is based on different attributes that we have come up with. Now, below we will furter define those attributes through the use of self variables:
+''' Let's look at classes and objects. These are basically "data types" which can be used to store information about something 
+(more so than just your regular string, integer or Boolean value). 
+First of all, the class defines the object (Student class below), then the object is the data type in action (an actual student). 
+Let's look into it deeper: '''
+
+''' Let's define what our student is by using functions and attributes, we will start by definining the __init__ function.
+This is the initialize function that will map out what attributes a student will have. We will pass in attributes into the parentheses. 
+So within this initialize function we have defined what a student is based on different attributes that we have come up with. 
+Now, below we will furter define those attributes through the use of self variables: '''
+class Student: 
+    def __init__(self, name, major, gpa, is_on_probation): 
         self.name = name
         self.major = major
         self.gpa = gpa
         self.is_on_probation = is_on_probation
-# Now, before we move on, if I want to import this into another .py file I could say "from scratch import Student". First you define the .py file you are referencing then you refer to the Student class which resides inside of that file. We won't do that here since we are already in the scratch.py file, but you get the idea. Now, let's move on.
-student1 = Student("Jim", "Business", 3.1, False) # Now we have created the student1 object which is an instance of the Student class and we have now passed in values into this object by first referencing the class then putting strings, integer and Boolean value within the parentheses to complete the object. Every attribute we defined is now being used within the student1 object (which again is an instance of the Student class.)
-print(student1.name) # By using dot notation, I can reference a specific attribute within my student1 object and I can print only that value contained within that attribute rather than printing all the attributes contained in the student1 object.
+''' Now, before we move on, if I want to import this into another .py file I could say "from scratch import Student". 
+First you define the .py file you are referencing then you refer to the Student class which resides inside of that file. 
+We won't do that here since we are already in the scratch.py file, but you get the idea. Now, let's move on. '''
+student1 = Student("Jim", "Business", 3.1, False) 
+''' Now we have created the student1 object which is an instance of the Student class and we have now passed in values into this 
+object by first referencing the class then putting strings, integer and Boolean value within the parentheses to complete the object. 
+Every attribute we defined is now being used within the student1 object (which again is an instance of the Student class.) '''
+print(student1.name) 
+''' By using dot notation, I can reference a specific attribute within my student1 object and I can print only that value contained 
+within that attribute rather than printing all the attributes contained in the student1 object. '''
 print(student1.gpa)
 
 student2 = Student("Pam", "Art", 2.5, True)
 print(student2.major)
 print(student2.is_on_probation)
 
-# My class :):
-class Elyscia:
-    '''Define my baby'''
-    def __init__(self, height, weight, hair_color, eye_color, is_beautiful):
+# Defining another class:
+class Bobby:
+    '''Define my friend Bobby'''
+    def __init__(self, height, weight, hair_color, eye_color, is_funny):
         self.height = height
         self.weight = weight
         self.hair_color = hair_color
         self.eye_color = eye_color
-        self.is_beautiful = is_beautiful
+        self.is_funny = is_funny
 
-baby = Elyscia("5 foot 3", 105, "brown", "brown", True)
-print("What are Elyscia's features, like height, weight, hair color and eye color? " + "Oh, and is she beautiful, True or False?")
-print(baby.height)
-print(baby.weight)
-print(baby.hair_color)
-print(baby.eye_color)
-print(baby.is_beautiful)
+friend = Bobby("5 foot 10", 175, "brown", "brown", True)
+print("What are Bobby's features, like height, weight, hair color and eye color? " + "Oh, and is Bobby funny, True or False?")
+print(friend.height)
+print(friend.weight)
+print(friend.hair_color)
+print(friend.eye_color)
+print(friend.is_funny)
 
 # Creating a multiple choice quiz using the import of a class, lists, a function, a for loop, an if statement and a print statement:
 from Question import Question # We start by importing our Question class from our Question.py file.
@@ -560,13 +603,19 @@ question_prompts = [ # Here we are creating a list of questions and naming it qu
     "What color are bananas?\n(a) Teal\n(b) Magenta\n(c) Yellow\n\n",
     "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n"
 ]
-# Here we are creating another list (this time called questions) and adding the Question class and passing in values to the attributes of the Question class. We are first passing in our question prompts and call out which index position they are in within our question_prompts list, then we are giving the correct answer to the question using a string value.
+''' Here we are creating another list (this time called questions) and adding the Question class and passing in values to the attributes of the Question class. 
+We are first passing in our question prompts and call out which index position they are in within our question_prompts list, 
+then we are giving the correct answer to the question using a string value. '''
 questions = [
     Question(question_prompts[0], "a"),
     Question(question_prompts[1], "c"),
     Question(question_prompts[2], "b")
 ]
-# Now we are defining our run_test function and passing the questions variable (which is a list of question using the question class and question_prompts variable) into it and we are also giving a starting point for our score (which is 0), then we are iterating or looping through each question in the questions variable/list and stating that if the answer that the user inputs within the question prompt attribute (inside of the Question class) is equal to the answer attribute that we have defined within our Question class, then increment their score up by one. Finally, print a statement telling the user how many questions they got correct and then finally run the function to make this program work.
+''' Now we are defining our run_test function and passing the questions variable (which is a list of question using the question class and question_prompts variable) 
+into it and we are also giving a starting point for our score (which is 0), then we are iterating or looping through each question in the questions variable/list and 
+stating that if the answer that the user inputs within the question prompt attribute (inside of the Question class) is equal to the answer attribute that we have 
+defined within our Question class, then increment their score up by one. Finally, print a statement telling the user how many questions they got correct and then 
+finally run the function to make this program work. '''
 def run_test(questions):
     score = 0
     for question in questions:
@@ -584,7 +633,8 @@ class Employee: # You could obviously import this class from another file or mod
         self.job_title = job_title
         self.score = score
     
-    def is_in_good_standing(self): # This is our class functions (or object function). Though it is small, it provides a service to the class and is very handy.
+    def is_in_good_standing(self): 
+    # This is our class functions (or object function). Though it is small, it provides a service to the class and is very handy.
         if self.score >= 80:
             return True
         else:
@@ -597,14 +647,19 @@ print(employee1.is_in_good_standing())
 print(employee2.is_in_good_standing())
 
 # Inheritance:
-from Chef import Chef # We've created a Chef class and within that class we have used functions to define the different things that the chef can do. But what if we wanted to make a special Chinese chef who can (a) do everything that the regular chef can do and (b) also perform additional functions? This is where we will begin to add inheritance. 
+''' We've created a Chef class and within that class we have used functions to define the different things that the chef can do. 
+But what if we wanted to make a special Chinese chef who can (a) do everything that the regular chef can do and (b) also perform additional functions? 
+This is where we will begin to add inheritance.  '''
+from Chef import Chef 
 from ChineseChef import ChineseChef
-myChef = Chef() # We are just using the regular Chef class here and showing how we can run it.
+# We are just using the regular Chef class here and showing how we can run it.
+myChef = Chef()
 myChef.make_chicken()
 myChef.make_salad()
 myChef.make_special_dish()
-
-myChineseChef = ChineseChef() # Now we are using our new ChineseChef class here and inheriting everything from the Chef class yet also changing some things about the Chef class to make them lineup with a Chinese dish, and also adding new functionality on top of the original Chef class functionality.
+''' Now we are using our new ChineseChef class here and inheriting everything from the Chef class yet also changing some things about the Chef class to 
+make them lineup with a Chinese dish, and also adding new functionality on top of the original Chef class functionality. '''
+myChineseChef = ChineseChef() 
 myChineseChef.make_chicken()
 myChineseChef.make_special_dish()
 
