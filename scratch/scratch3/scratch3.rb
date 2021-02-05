@@ -93,11 +93,3 @@ puts phrase.index("Ruby")
 puts phrase2.index("whitespace")
 
 # Google more string methods in Ruby!
-
-
-
-
-
-
-=======
->>>>>>> 7bed2a34d985e429c6828a52b2d5cc7363b2f707
