@@ -662,24 +662,3 @@ make them lineup with a Chinese dish, and also adding new functionality on top o
 myChineseChef = ChineseChef() 
 myChineseChef.make_chicken()
 myChineseChef.make_special_dish()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
