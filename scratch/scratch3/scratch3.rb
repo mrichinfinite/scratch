@@ -45,6 +45,7 @@ floating_point = 3.2 # floating point number
 boolean = true # Boolean
 boolean2 = false # Boolean
 none = nil # nil (means no value)
+<<<<<<< HEAD
 
 # Strings in Ruby
 puts "mrichinfinite"
@@ -98,3 +99,5 @@ puts phrase2.index("whitespace")
 
 
 
+=======
+>>>>>>> 7bed2a34d985e429c6828a52b2d5cc7363b2f707
