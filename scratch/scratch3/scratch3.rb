@@ -45,10 +45,3 @@ floating_point = 3.2 # floating point number
 boolean = true # Boolean
 boolean2 = false # Boolean
 none = nil # nil (means no value)
-
-
-
-
-
-
-
