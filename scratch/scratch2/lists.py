@@ -122,9 +122,3 @@ print(x) # This will print the original list.
 print(y) # This will print the new list that we created using our expression + for loop.
 
 # You can see how we can use many of the built-in Python methods and functions to easily create and modify lists!
-
-
-
-
-
-
