@@ -92,3 +92,40 @@ puts phrase.index("Ruby")
 puts phrase2.index("whitespace")
 
 # Google more string methods in Ruby!
+
+# Numbers + math
+puts 67
+puts 3.14
+puts -5.9678
+puts 5 + 9
+puts 10 - 7
+puts 7 * 7
+puts 81 / 9
+puts 2**3 # exponent
+puts 10 % 3 # modulus (divides then prints remainder)
+# Using math in a variable
+num = 20
+puts num / 5
+
+# Useful methods:
+
+# How to print a number when combining it with a string
+# (You must do it this way to avoid an error)
+puts (num.to_s + " is the best number ever!")
+# Print the absolute value of a number
+puts num.abs()
+# Round a number
+num2 = 36.67898
+puts num2.round()
+# Print the next highest number than the one given
+puts num2.ceil()
+# Print the next lowest number than the one given
+puts num2.floor()
+# Using the Math class to get the square root of a number
+puts Math.sqrt(40)
+puts Math.sqrt(num2)
+puts Math.log(1) # logarithm
+# Keep in mind that when you perform math operations
+# in Ruby, integers will only return integers, however
+# using floating point numbers will return floating 
+# point numbers (unless you're using the Math class)
