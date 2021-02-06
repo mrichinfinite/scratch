@@ -15,6 +15,6 @@ The scratch2 folder contains additional Python lessons divided by subject. The .
 
 The scratch3 folder contains a basic Ruby lesson.
 
-The scratch1 folder is complete, but scratch2 and scratch3 are still a work in progress. Despite this, all the code in this repo will still run successfully.
+The scratch1 folder is complete, but the scratch2 and scratch3 folders are still a work in progress. Despite this, all the code in this repo will still run successfully.
 
 Stay tuned, more to come!
