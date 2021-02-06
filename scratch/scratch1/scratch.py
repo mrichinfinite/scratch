@@ -327,7 +327,7 @@ elif not(is_male) and is_tall:
     print("You are not a male but are tall")
 else:
     print("You are not a male and not tall")
-# Try some more of these!
+# Try some more of these in your own time!
 
 # Using comparisons with IF statements:
 def max_num(num1, num2, num3):
