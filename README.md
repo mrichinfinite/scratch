@@ -7,7 +7,7 @@ You will find more comments than usual in the code because it is designed for le
 
 All of the code will run successfully as is, but feel free to change it up and try new things as you go along!
 
-All folders are contained within the root folder called scratch.
+All folders are contained within the folder called scratch.
 
 The scratch1 folder contains a basic Python lesson with all the necessary .py files to run the code successfully.
 
