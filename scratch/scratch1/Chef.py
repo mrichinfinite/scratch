@@ -7,3 +7,4 @@ class Chef:
 
     def make_special_dish(self):
         print("The chef makes BBQ ribs")
+# Great, you've created the Chef class!
