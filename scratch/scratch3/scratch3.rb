@@ -129,3 +129,17 @@ puts Math.log(1) # logarithm
 # in Ruby, integers will only return integers, however
 # using floating point numbers will return floating 
 # point numbers (unless you're using the Math class)
+
+# Google more math operations in Ruby!
+
+# Getting user input
+puts "Enter Your Name: "
+name = gets 
+puts ("Hello " + name)
+# If you want to add additional text after the name variable
+# without Ruby creating a new line, use the chomp() method
+puts "Enter your age: "
+age = gets.chomp()
+puts ("You are " + age + " years old!")
+
+
