@@ -142,4 +142,29 @@ puts "Enter your age: "
 age = gets.chomp()
 puts ("You are " + age + " years old!")
 
+# Building a basic calculator
+puts "Enter a number: "
+num1 = gets.chomp()
+puts "Enter another number: "
+num2 = gets.chomp()
+puts (num1 + num2)
+# ^Notice how this printed out, it concatenated the two strings 
+# (which were num1 and num2), but that's not what we want, we
+# want to add num1 and num2 together and get a result
 
+# So, let's try this a different way
+puts (num1.to_i + num2.to_i)
+# ^This will convert the strings in these two variables to integers
+
+# Now that's helpful for integers, but this won't work for decimal 
+# numbers
+
+# We need to do this for decimal numbers (floating point numbers)
+puts (num1.to_f + num2.to_f)
+
+# The other way to do it is like this (I think this is cleaner)
+puts "Enter a number: "
+num1 = gets.chomp().to_f
+puts "Enter another number: "
+num2 = gets.chomp().to_f
+puts (num1 + num2)
