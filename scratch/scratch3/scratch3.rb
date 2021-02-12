@@ -168,3 +168,15 @@ num1 = gets.chomp().to_f
 puts "Enter another number: "
 num2 = gets.chomp().to_f
 puts (num1 + num2)
+
+# Build a mad libs game
+puts "Enter a color: "
+color = gets.chomp()
+puts "Enter a plural noun: "
+plural_noun = gets.chomp()
+puts "Enter a celebrity name: "
+celebrity_name = gets.chomp()
+
+puts ("Roses are " + color)
+puts (plural_noun + " are blue")
+puts ("I love " + celebrity_name)
