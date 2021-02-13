@@ -180,3 +180,49 @@ celebrity_name = gets.chomp()
 puts ("Roses are " + color)
 puts (plural_noun + " are blue")
 puts ("I love " + celebrity_name)
+
+# Arrays
+friends = Array["Kevin", "Karen", "Oscar"]
+puts friends
+# Arrays can contain different data types other than just strings
+data = Array[1, "Karen", false]
+puts data
+# Access an element inside of an array
+puts friends[1]
+puts data[0]
+# Access an element from the end of an array
+puts friends[-1]
+puts data[-2]
+# Access a range of elements (in this example, only the
+# elements with index position 0 and 1 will actually print)
+puts friends[0, 2]
+# This would print all the elements in our friends array
+puts friends[0, 3]
+# Let's try one more
+puts data[0, 1]
+# Modifying elements inside of an array is easy
+friends[0] = "Bill"
+data[2] = true
+# Create a new array but define the elements within it later on
+colors = Array.new
+
+colors[0] = "blue"
+colors[1] = "red"
+colors[6] = "yellow"
+# Now, notice when I print this, the empty elements are printed as well
+puts colors
+
+# Useful array methods
+# How many elements in the array?
+puts friends.length()
+# Does the array include this specified element?
+puts friends.include? "Karen"
+# How about this one?
+puts friends.include? "Marty"
+# Reverse the order of the array
+puts friends.reverse()
+# Sort the array alphabetically (only works with similar data types)
+puts friends.sort()
+# So, we can do it with integers too
+numbers = Array[3, 2, 1]
+puts numbers.sort()
