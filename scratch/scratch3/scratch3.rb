@@ -226,3 +226,23 @@ puts friends.sort()
 # So, we can do it with integers too
 numbers = Array[3, 2, 1]
 puts numbers.sort()
+
+# Hashes (they are just like dictionaries, they define key value pairs)
+states = {
+    "New York" => "NY",
+    "Texas" => "TX",
+    "California" => "CA"
+}
+puts states
+# So as you can see, we have key value pairs here,
+# let's just print a key and return the value
+puts states["Texas"]
+puts states["California"]
+# Some other ways to define key value pairs
+state = {
+    :Michigan => "MI",
+    1=> "MI"
+
+}
+puts state[:Michigan]
+puts state[1]
