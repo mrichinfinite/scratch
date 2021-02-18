@@ -246,3 +246,24 @@ state = {
 }
 puts state[:Michigan]
 puts state[1]
+
+# Methods
+def sayhi
+    puts "Hello User"
+end
+
+sayhi
+
+# Now let's pass in some input parameters to see how it works
+def sayhello(name, age)
+    puts("Hello " + name + ", you are " + age.to_s) # Remember, write .to_s to avoid an error
+end
+
+sayhello("Billy Bob", 95)
+
+# You can assign default values to input parameters
+def saysomething(name="Joe", age=42)
+    puts("Hello " + name + ", you are " + age.to_s)
+end
+
+saysomething
