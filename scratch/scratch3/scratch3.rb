@@ -247,23 +247,23 @@ state = {
 puts state[:Michigan]
 puts state[1]
 
-# Methods
+# Methods (execute a block of code that's callable at a later time)
 def sayhi
     puts "Hello User"
-end
+end # Must put this here to close the method
 
-sayhi
+sayhi # This will print "Hello User"
 
-# Now let's pass in some input parameters to see how it works
+# Now let's pass in some input parameters/arguments to see how it works
 def sayhello(name, age)
-    puts("Hello " + name + ", you are " + age.to_s) # Remember, write .to_s to avoid an error
+    puts("Hello " + name + ", you are " + age.to_s) # Remember to put .to_s to avoid an error
 end
-
+# Be sure to put the right number of arguments in here (need one for name and one for age)
 sayhello("Billy Bob", 95)
 
-# You can assign default values to input parameters
+# You can assign default values to input parameters/arguments
 def saysomething(name="Joe", age=42)
     puts("Hello " + name + ", you are " + age.to_s)
 end
-
+# So now, since we have already defined default values for our arguments, we don't have to put them here again
 saysomething
