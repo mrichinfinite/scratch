@@ -267,3 +267,24 @@ def saysomething(name="Joe", age=42)
 end
 # So now, since we have already defined default values for our arguments, we don't have to put them here again
 saysomething
+
+# Return statements (the return keyword signals to Ruby that we are DONE with the method
+# therefore, no further code will be executed after the return statement)
+def cube(num)
+    return num * num * num
+    # So now, this will not print anything
+    puts "Hello"
+end
+
+puts cube(2)
+
+# You can return multiple values in a return statement
+def squared(num)
+    return num * num, 64, "Hello"
+end
+
+puts squared(3)
+
+# You can also access each element in a return statement array by calling its index position
+puts squared(2)[1]
+puts squared(6)[2]
