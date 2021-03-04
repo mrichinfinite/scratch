@@ -288,3 +288,56 @@ puts squared(3)
 # You can also access each element in a return statement array by calling its index position
 puts squared(2)[1]
 puts squared(6)[2]
+
+# If Statements
+isanimal = true
+islarge = true
+
+if isanimal and islarge
+    puts "You are a large animal!"
+elsif isanimal and !islarge # This exclamation point is called a negation operator. It means "is not".
+    puts "You are a small animal!"
+elsif !isanimal and islarge
+    puts "You are not an animal, but you are large!"
+else
+    puts "You are not an animal, and you are not large!"
+end
+
+isanimal = true
+islarge = false
+
+if isanimal and islarge
+    puts "You are a large animal!"
+elsif isanimal and !islarge
+    puts "You are a small animal!"
+elsif !isanimal and islarge
+    puts "You are not an animal, but you are large!"
+else
+    puts "You are not an animal, and you are not large!"
+end
+
+isanimal = false
+islarge = true
+
+if isanimal and islarge
+    puts "You are a large animal!"
+elsif isanimal and !islarge
+    puts "You are a small animal!"
+elsif !isanimal and islarge
+    puts "You are not an animal, but you are large!"
+else
+    puts "You are not an animal, and you are not large!"
+end
+
+isanimal = false
+islarge = false
+
+if isanimal and islarge
+    puts "You are a large animal!"
+elsif isanimal and !islarge
+    puts "You are a small animal!"
+elsif !isanimal and islarge
+    puts "You are not an animal, but you are large!"
+else
+    puts "You are not an animal, and you are not large!"
+end
