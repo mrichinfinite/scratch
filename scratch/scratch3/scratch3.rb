@@ -295,7 +295,7 @@ islarge = true
 
 if isanimal and islarge
     puts "You are a large animal!"
-elsif isanimal and !islarge # This exclamation point is called a negation operator. It means "is not".
+elsif isanimal and !islarge # This exclamation point is called a negation operator, it means "is not"
     puts "You are a small animal!"
 elsif !isanimal and islarge
     puts "You are not an animal, but you are large!"
@@ -341,3 +341,21 @@ elsif !isanimal and islarge
 else
     puts "You are not an animal, and you are not large!"
 end
+
+# Create a method called max that uses if statements to return the largest number
+# when 3 numbers are passed into it
+def max(num1, num2, num3)
+    if num1 >= num2 and num1 >= num3
+        return num1
+    elsif num2 >= num1 and num2 >= num3
+        return num2
+    else
+        return num3
+    end
+end
+
+puts max(1, 2, 3)
+puts max(20, 54, 9)
+puts max(92, 46, 71)
+# Here we used comparison operators to compare different values that resulted in a Boolean value
+# We can use this instead of having hard coding a Boolean value beforehand
