@@ -359,3 +359,23 @@ puts max(20, 54, 9)
 puts max(92, 46, 71)
 # Here we used comparison operators to compare different values that resulted in a Boolean value
 # We can use this instead of having hard coding a Boolean value beforehand
+
+# Building a better calculator
+puts "Enter first number: "
+num1 = gets.chomp().to_f # Convert string to floating point number 
+puts "Enter first operator: "
+op = gets.chomp()
+puts "Enter second number: "
+num2 = gets.chomp().to_f
+
+if op == "+"
+    puts (num1 + num2)
+elsif op == "-"
+    puts (num1 - num2)
+elsif op == "*"
+    puts (num1 * num2)
+elsif op == "/"
+    puts (num1 / num2)
+else
+    puts "Invalid operator, please enter a valid operator."
+end
