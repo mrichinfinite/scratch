@@ -382,6 +382,7 @@ end
 
 # Case expressions. We can use these in lieu of if statements in certain situations
 def get_day_name(day)
+    
     day_name = ""
 
     case day
