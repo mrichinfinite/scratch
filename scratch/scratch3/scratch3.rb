@@ -410,3 +410,10 @@ puts get_day_name("thu")
 puts get_day_name("wed")
 puts get_day_name("sun")
 puts get_day_name("cat")
+
+# While loops
+index = 1
+while index <= 5
+    puts index
+    index += 1
+end
