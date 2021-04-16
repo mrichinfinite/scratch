@@ -417,3 +417,43 @@ while index <= 5
     puts index
     index += 1
 end
+
+# Building a guessing game (user tries to guess a secret word)
+
+# Define secret word
+secret_word = "fun"
+# User input
+guess = ""
+# Starting number of guesses user has made
+guess_count = 0
+# Limit of guesses user has before they lose the game
+guess_limit = 3
+# Initial Boolean value for whether user is out of guesses or not
+out_of_guesses = false
+
+# Now create a while loop that continues to iterate, asking the user for input
+
+# While the user input does not equal the secret word and the user is not out of guesses
+# continue iterating through the while loop
+while guess != secret_word and !out_of_guesses
+# If the guess count is less than the guess limit, allow the user to input a guess
+    if guess_count < guess_limit
+        # User input
+        puts "Enter your guess: "
+        # Prevent creation of a new line during user input
+        guess = gets.chomp()
+        # Increment guess count by 1 until limit is reached
+        guess_count += 1
+    else
+        # When limit is reached, user is out of guesses, define secondary Boolean value
+        out_of_guesses = true
+    # Remember to close out if statement and while loop with "end"
+    end 
+end
+
+# Messages when user is out of guesses vs. when they guess the secret word
+if out_of_guesses
+    puts "You Lose!"
+else
+    puts "You Win!"
+end
