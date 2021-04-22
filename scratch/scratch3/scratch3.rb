@@ -457,3 +457,37 @@ if out_of_guesses
 else
     puts "You Win!"
 end
+
+# For loops 
+# Loop/iterate through a collection of elements
+
+# Create an array
+friends = ["Billy", "Bob", "Kaylee", "Susan"]
+
+# Just FYI, you can print a specific index position from an array this way
+puts friends[1]
+
+# Use a for loop to iterate through the friends array
+# During each iteration of "friend", a different friend in the array will be outputted
+# "Friend" can be any name that you desire, it helps if it adds context though, that's why we use "friend" here
+for friend in friends
+    # Print the iteration
+    puts friend
+end
+
+# A second way of for looping in Ruby, again "friend" can be anything you want
+friends.each do |friend|
+    puts friend
+end
+
+# Loop/iterate through a block of code for a specified number of times
+# Shown below is how to iterate through a series of numbers, in this case it is 0 to 5
+# "Index" can be any name that you desire
+for index in 0..5
+    puts index
+end
+
+# A second way of the above example is shown below, again "index" can be anything you want
+6.times do |index|
+    puts index
+end
