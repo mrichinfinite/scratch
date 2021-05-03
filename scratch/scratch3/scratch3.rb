@@ -491,3 +491,20 @@ end
 6.times do |index|
     puts index
 end
+
+# Exponent method (FYI, will only work with positive numbers)
+def power(base_num, power_num)
+    result = 1
+    # Loop through the code block x number of times where x is power_num
+    power_num.times do #|index| <-- This is optional.
+        result = result * base_num
+    end
+    return result
+end
+
+# First, we will try 2, cubed.
+puts power(2, 3)
+# Now, let's try 5, squared.
+puts power(5, 2)
+# Finally, let's try 7 to the power of 10.
+puts power(7, 10)
