@@ -508,3 +508,14 @@ puts power(2, 3)
 puts power(5, 2)
 # Finally, let's try 7 to the power of 10.
 puts power(7, 10)
+
+# A note on comments
+
+=begin
+I can make multiline comments using =begin and =end, however
+using hastags (#) is the most typical way.
+# Just like this
+# and this
+# and this
+# Thanks!
+=end
