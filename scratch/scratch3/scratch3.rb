@@ -496,26 +496,48 @@ end
 def power(base_num, power_num)
     result = 1
     # Loop through the code block x number of times where x is power_num
-    power_num.times do #|index| <-- This is optional.
+    power_num.times do #|index| <-- This is optional
         result = result * base_num
     end
     return result
 end
 
-# First, we will try 2, cubed.
+# First, we will try 2, cubed
 puts power(2, 3)
-# Now, let's try 5, squared.
+# Now, let's try 5, squared
 puts power(5, 2)
-# Finally, let's try 7 to the power of 10.
+# Finally, let's try 7 to the power of 10
 puts power(7, 10)
 
 # A note on comments
 
 =begin
 I can make multiline comments using =begin and =end, however
-using hastags (#) is the most typical way.
+using hastags (#) is the most typical way
 # Just like this
 # and this
 # and this
 # Thanks!
 =end
+
+# Reading from files
+
+# Open the specified file, read into it and put the contents into a variable
+File.open("employees.txt", "r") do |file|
+# Since this file is in my current directory I don't need to specify the path, 
+# but if it was not in my current directory, I would need to specify a file path
+
+# Print the file metadata (how it's stored in Ruby)
+puts file
+# Print the file's contents
+puts file.read
+# See if something exists within said file or not
+puts file.read().include? "Bill"
+end
+
+# Another way of doing the same thing as above
+file = File.open("employees.txt", "r")
+# Loop through all the lines in the file and then print it
+for line in file.readlines()
+    puts line
+end
