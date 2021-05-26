@@ -541,5 +541,5 @@ file = File.open("employees.txt", "r")
 for line in file.readlines()
     puts line
 end
-
+# We always want to close files after opening them because... state why ...
 file.close()
