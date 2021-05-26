@@ -544,4 +544,38 @@ end
 # We always want to close files after opening them or else they remain open and consume memory in our program
 file.close()
 
+# Writing to files (append something to a file, modify a file, overwrite an entire file or create a new file)
 
+# Append something to the file
+File.open("employees.txt", "a") do |file|
+    # Add this to a new line in the file
+    file.write("\nBobby, Engineering")
+end
+
+file.close()
+
+# Overwrite entire file
+File.open("employees.txt", "w") do |file|
+    file.write("No more employees!")
+end
+
+file.close()
+
+# Create a new file (let's create a new HTML file)
+File.open("index.html", "w") do |file|
+    file.write("<h1>Hello World!</h1>")
+end
+
+file.close()
+
+# Read and write to a file
+File.open("employees.txt", "r+") do |file|
+    # Move cursor in file character by character
+    file.readchar()
+    file.write("X")
+    # Move cursor in file line by line
+    file.readline()
+    file.write("\nThe second line of the file is now changed.")
+end
+
+file.close()
