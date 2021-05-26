@@ -544,5 +544,4 @@ end
 # We always want to close files after opening them or else they remain open and consume memory in our program
 file.close()
 
-# Writing to files
 
