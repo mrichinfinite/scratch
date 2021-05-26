@@ -17,4 +17,6 @@ The scratch3 folder contains a basic Ruby lesson.
 
 The scratch1 folder is complete, but the scratch2 and scratch3 folders are still a work in progress. Despite this, all the code in this repo will still run successfully.
 
+The code lessons for the scratch1 and scratch3 folders are quite monolithic in nature (apologies, I will fix this a some point), but the code in scratch2 is more modular and is therefore easier to consume.
+
 Stay tuned, more to come!
