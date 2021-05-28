@@ -125,6 +125,6 @@ say_hello_2()
 say_hello_2()
 
 '''With decorators you can calculate the execution time of a function (using a timer decorator), you can print out more information 
-about a called function and its arguments (using a debug decorator), you can check if the function fulfills some requirements and
-behaves accordingly (using a check decorator), you can register functions (using plug-ins with decorators), you can cache return values,
+about a called function and its arguments (using a debug decorator), you can check if function arguments fulfill some requirements and
+you can adapt the behavior accordingly (using a check decorator), you can register functions (plug-ins with decorators), you can cache return values,
 add information or update the state of an object.'''

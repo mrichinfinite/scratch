@@ -1,5 +1,6 @@
 # Logging in Python: https://docs.python.org/3/howto/logging.html
 import logging
+
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S')
 logging.debug('This is a debug message')
