@@ -44,7 +44,7 @@ def square_numbers():
         time.sleep(0.1)
 
 threads = []
-# Get number of threads in process.
+# Number of threads in process.
 num_threads = 10
 
 # Create threads.
