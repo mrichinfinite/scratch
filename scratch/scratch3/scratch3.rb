@@ -579,3 +579,25 @@ File.open("employees.txt", "r+") do |file|
 end
 
 file.close()
+
+# Exception handling
+
+# For example, create an array
+lucky_nums = [4, 6, 8, 12, 14, 16, 18]
+# In a begin block, create a bad call on the array
+begin
+    lucky_nums["cat"]
+# In a rescue block, state the type of exception it is and point it to 
+# a variable with a name of your choice (here we are simply using "exception" here)
+rescue TypeError => exception
+    # Put any code you want, but make sure to call on your variable at some point
+    puts "Wrong type"
+    puts exception
+end
+# Try it again but with a different exception this time
+begin
+    num = 10 / 0
+rescue ZeroDivisionError => exception
+    puts "Division by zero error"
+    puts exception
+end
