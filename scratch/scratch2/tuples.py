@@ -11,7 +11,7 @@ print(mytuple)
 mytuple2 = ("Max",)
 print(type(mytuple2))
 
-# Create a tuple from an iterable (like a list) using the tuple function.
+# Create a tuple from an iterable (like a list) using the tuple() function.
 mytuple3 = tuple(["Bill", 29, True])
 print(mytuple3)
 
