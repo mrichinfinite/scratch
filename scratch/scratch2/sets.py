@@ -5,13 +5,13 @@ print(myset)
 myset = {1, 2, 3, 1, 2, 3}
 print(myset) # As you can see it still printed out just like the myset variable did.
 
-# You can use the set() method to create a set out of something else (we'll use a list here).
+# You can use the set() function to create a set out of something else (we'll use a list here).
 myset = set([1, 2, 3])
 print(myset)
 # However, if you do the same thing with a string, it's going to look a bit different.
 myset = set("Hello")
 print(myset)
-# To print an empty set you must use the set() method.
+# To print an empty set you must use the set() function.
 myset = set()
 print(myset)
 # To add or remove elements from a set use the add() and remove() methods.
@@ -24,8 +24,7 @@ myset.remove(1)
 myset.remove(2)
 print(myset)
 '''Another way to remove elements without potentailly encountering any errors (like
-if you specify an element that doesn't exist in the set) is to use the discard()
-method'''
+if you specify an element that doesn't exist in the set) is to use the discard() method.'''
 myset.discard(3)
 print(myset)
 '''You can also remove the first element in a set with the pop() method. This will print 
@@ -125,7 +124,7 @@ print(setM) # As you can see, even the original set is changed now. This is beca
 # Now let's just make a simple copy of a set using the copy() method.
 setO = setM.copy()
 print(setO)
-# Here's another way to do it using the set() method.
+# Here's another way to do it using the set() function.
 setP = set(setM)
 print(setP)
 
