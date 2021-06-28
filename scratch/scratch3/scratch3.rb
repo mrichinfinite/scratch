@@ -601,3 +601,31 @@ rescue ZeroDivisionError => exception
     puts "Division by zero error"
     puts exception
 end
+
+# Classes and objects
+class Book 
+    # Define what a "book" entails in your program
+    attr_accessor :title, :author, :pages
+end
+
+# Create book objects (object is an instance of a class)
+book1 = Book.new()
+book1.title = "My Random Book"
+book1.author = "Anonymous"
+book1.pages = 500
+
+# Print the attributes of the book we created
+puts book1.title
+puts book1.author
+puts book1.pages
+
+book2 = Book.new()
+book2.title = "Another Random Book"
+book2.author = "Anonoymous #2"
+book2.pages = 900
+
+puts book2.title
+puts book2.author
+puts book2.pages
+
+# Everything is an object in Ruby!
